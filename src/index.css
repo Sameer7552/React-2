@@ -1,23 +1,21 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
-/* Custom button styles */
 .btn-custom, .btn-primary, .btn-explore {
-  background-color: #e67300; /* Orange color */
-  color: black; /* Black text color */
+  background-color: #e67300; 
+  color: black; 
   border-color: #e67300;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  text-align: center; /* Center the text inside the button */
+  text-align: center;
 }
 
 .btn-custom:hover, .btn-primary:hover, .btn-explore:hover {
-  background-color: #c85a00; /* Darker shade of orange on hover */
+  background-color: #c85a00;
   border-color: #c85a00;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
-  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-3px); 
 }
 
-/* Hero Section */
 .hero-section {
   height: 50vh;
   background-image: url('https://source.unsplash.com/1600x900/?food');
@@ -37,7 +35,6 @@
   z-index: -1;
 }
 
-/* Section Title */
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -63,7 +60,6 @@
   width: 120px;
 }
 
-/* Card */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
@@ -77,68 +73,62 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Header */
 .header .navbar-brand .logo {
   height: 60px;
   width: auto;
 }
 
 .header .navbar-nav .nav-link:hover {
-  color: #e67300; /* Orange color on hover */
+  color: #e67300; 
 }
 
-/* Footer */
 .footer {
   background-color: #343a40;
   color: var(--text-color);
 }
 
 .footer h5 {
-  color: #e67300; /* Orange color for footer headings */
+  color: #e67300; 
 }
 
 .footer a {
   color: var(--text-color);
-  text-decoration: none; /* Removes underline from links */
+  text-decoration: none; 
   transition: color 0.3s;
 }
 
 .footer a:hover {
-  color: #e67300; /* Light orange color on hover */
+  color: #e67300;
 }
 
-/* Background with lines, shapes, and icons */
 body {
-  background: #f0f0f0; /* Light gray background */
-  background-image: url('path/to/your/background-image.svg'); /* Add path to your SVG background image with lines, shapes, and icons */
+  background: #f0f0f0;
+  background-image: url('path/to/your/background-image.svg'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-/* Centering Buttons in Cards */
 .card .btn {
   display: block;
-  margin: 0 auto; /* Centers the button within the card */
+  margin: 0 auto;
 }
 
-/* Explore Button */
 .btn-explore {
-  background-color: #e67300; /* Orange color */
-  color: black; /* Black text color */
+  background-color: #e67300; 
+  color: black;
   border-color: #e67300;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  text-align: center; /* Center the text inside the button */
+  text-align: center;
 }
 
 .btn-explore:hover {
-  background-color: #c85a00; /* Darker shade of orange on hover */
+  background-color: #c85a00;
   border-color: #c85a00;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
-  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
 }
 
-/* General Button Styling */
 .btn-custom, .btn-primary, .btn-explore {
   border-radius: 50px;
   font-weight: bold;
@@ -146,16 +136,14 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Remove underlines from footer links */
 .footer a {
-  text-decoration: none; /* Removes underline from links */
+  text-decoration: none;
 }
 
 .footer a:hover {
-  text-decoration: underline; /* Optional: add underline on hover for better visibility */
+  text-decoration: underline;
 }
 
-/* Spacing */
 .spacing {
   margin-left: .5rem;
 }

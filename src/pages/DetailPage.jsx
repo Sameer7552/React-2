@@ -10,7 +10,6 @@ const DetailPage = () => {
     const fetchRecipe = async () => {
       try {
         const response = await axios.get(`https://dummyjson.com/recipes/${id}`);
-        console.log(response.data); // Log the response data to check the structure
         setRecipe(response.data);
       } catch (error) {
         console.error("Error fetching recipe:", error);
@@ -34,10 +33,11 @@ const DetailPage = () => {
           />
         </div>
         <div className="col-md-6">
-          <h1 className="recipe-title">{recipe.name}</h1>
+          <h1 className="recipe-title mb-4">{recipe.name}</h1>
           <p className="recipe-ingredients"><strong>Ingredients:</strong> {recipe.ingredients.join(', ')}</p>
           <p className="recipe-instructions"><strong>Instructions:</strong> {recipe.instructions}</p>
           <p className="recipe-cuisine"><strong>Cuisine:</strong> {recipe.cuisine}</p>
+          <p className="recipe-cuisine"><strong>Cooking Time:</strong> {recipe.prepTimeMinutes} Mins</p>
           <p className="recipe-servings"><strong>Servings:</strong> {recipe.servings}</p>
           <p className="recipe-rating"><strong>Rating:</strong> {recipe.rating} / 5</p>
         </div>

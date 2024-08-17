@@ -9,8 +9,7 @@ const ListPage = () => {
     const fetchRecipes = async () => {
       try {
         const response = await axios.get('https://dummyjson.com/recipes');
-        console.log(response.data); // Check if the API response is as expected
-        setRecipes(response.data.recipes); // Ensure this matches the response structure
+        setRecipes(response.data.recipes);
       } catch (error) {
         console.error('Error fetching recipes:', error);
       }
