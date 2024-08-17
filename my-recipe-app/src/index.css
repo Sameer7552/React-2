@@ -1,0 +1,165 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* Custom button styles */
+.btn-custom, .btn-primary, .btn-explore {
+  background-color: #e67300; /* Orange color */
+  color: black; /* Black text color */
+  border-color: #e67300;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center the text inside the button */
+}
+
+.btn-custom:hover, .btn-primary:hover, .btn-explore:hover {
+  background-color: #c85a00; /* Darker shade of orange on hover */
+  border-color: #c85a00;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Hero Section */
+.hero-section {
+  height: 50vh;
+  background-image: url('https://source.unsplash.com/1600x900/?food');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color: var(--text-color);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+  width: 120px;
+}
+
+/* Card */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.header .navbar-brand .logo {
+  height: 60px;
+  width: auto;
+}
+
+.header .navbar-nav .nav-link:hover {
+  color: #e67300; /* Orange color on hover */
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: var(--text-color);
+}
+
+.footer h5 {
+  color: #e67300; /* Orange color for footer headings */
+}
+
+.footer a {
+  color: var(--text-color);
+  text-decoration: none; /* Removes underline from links */
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #e67300; /* Light orange color on hover */
+}
+
+/* Background with lines, shapes, and icons */
+body {
+  background: #f0f0f0; /* Light gray background */
+  background-image: url('path/to/your/background-image.svg'); /* Add path to your SVG background image with lines, shapes, and icons */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Centering Buttons in Cards */
+.card .btn {
+  display: block;
+  margin: 0 auto; /* Centers the button within the card */
+}
+
+/* Explore Button */
+.btn-explore {
+  background-color: #e67300; /* Orange color */
+  color: black; /* Black text color */
+  border-color: #e67300;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center the text inside the button */
+}
+
+.btn-explore:hover {
+  background-color: #c85a00; /* Darker shade of orange on hover */
+  border-color: #c85a00;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* General Button Styling */
+.btn-custom, .btn-primary, .btn-explore {
+  border-radius: 50px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+/* Remove underlines from footer links */
+.footer a {
+  text-decoration: none; /* Removes underline from links */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Optional: add underline on hover for better visibility */
+}
+
+/* Spacing */
+.spacing {
+  margin-left: .5rem;
+}
+
+.color-orange {
+  color: #e67300;
+}
